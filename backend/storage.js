@@ -311,6 +311,15 @@ class DatabaseService {
         return this.extractAllEntities(doc, entityType);
     }
 
+    async getCRDTData(userId, entityType) {
+        const session = await this.getUserSession(userId);
+
+        const record = await session.tableModel.findOne({ entityType });
+
+        // const doc = await this.loadEntityForUser(userId, entityType);
+        return record;
+    }
+
     // Extract all entities from Automerge document
     extractAllEntities(doc, entityType) {
         if (entityType === 'todos') {

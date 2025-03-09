@@ -42,7 +42,7 @@ To set up the **crdt-todo-list** project locally, follow these steps:
 5. **Start the Backend Server**:
    ```bash
    cd backend
-   npm start
+   npm run start-dev
    ```
    This command starts the backend server.
 
@@ -50,7 +50,7 @@ To set up the **crdt-todo-list** project locally, follow these steps:
    Open a new terminal window or tab, then navigate to the frontend directory and start the server:
    ```bash
    cd frontend
-   npm start
+   npm run dev
    ```
    This command starts the frontend development server.
 

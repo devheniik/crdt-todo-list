@@ -71,8 +71,9 @@ app.get('/todos', async (req, res) => {
     try {
         const userId = getUserId(req);
         const todos = await dbService.getAllEntities(userId, 'todos');
+        const crdt = await dbService.getCRDTData(userId, 'todos');
 
-        res.json({ todos });
+        res.json({ todos, crdt });
     } catch (err) {
         console.error('Get todos error:', err);
         res.status(500).json({ error: 'Failed to get todos' });

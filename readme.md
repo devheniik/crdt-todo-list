@@ -58,5 +58,3 @@ To set up the **crdt-todo-list** project locally, follow these steps:
    Open your browser and navigate to `http://localhost:5173` to use the to-do list application.
 
 **Note**: Ensure that the MongoDB service is running and both the backend and frontend servers are active for the application to function correctly.
-
-For more detailed information on setting up similar projects, you can refer to the [crdt-todo-app](https://github.com/chtushar/crdt-todo-app) repository. 

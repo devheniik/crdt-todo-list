@@ -1,5 +1,4 @@
-![CRDT Todo List Screenshot](https://prnt.sc/h6KRFGVSyXsL "CRDT Todo List Screenshot")
-
+![img.png](img.png)
 
 To set up the **crdt-todo-list** project locally, follow these steps:
 
